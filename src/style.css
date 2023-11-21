@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+:root{
+    background-color: black;
+}
+
+#app{
+    position: relative;
+    image-rendering: pixelated;
+    text-rendering: optimizeLegibility;
+    user-select: none;
+    font-family: 'Pixelify Sans', SansSerif;
+    width: fit-content;
+    margin: auto;
+}
+
+#app #ui{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#app #ui .ins{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+
+    font-size: 1.2em;
+
+    border: solid 0.1em white;
+    border-radius: 0.3em;
+    padding: 0.4em;
+    background-color: rgb(0, 0, 0, 0.3);
+    color: white;
+}
+
+#app #ui .ins *{
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+#app #ui .main-nav{
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+
+    font-size: 1.2em;
+
+    border: solid 0.1em white;
+    border-radius: 0.3em;
+    padding: 0.4em;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+#app #ui .main-nav .animal-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: white;
+}
+
+#app #ui .main-nav .animal-nav.success{
+    color: #9bff00;
+}
+
+#app #ui .main-nav .animal-nav.failure{
+    opacity: 50%;
+}
+
+#app #ui .main-nav .animal-nav img{
+    display: flex;
+    flex-direction: row;
+    width: 2em;
+    height: 2em;
+    margin-right: 0.2em;
+}
+
+#app #ui .pokedex-nav{
+    position: absolute;
+    top: 11em;
+    left: 1em;
+
+    font-size: 1.5em;
+    padding: 0.4em;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+#app #ui .pokedex-nav .animal-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    color: white;
+    border: solid 0.1em white;
+    border-radius: 0.3em;
+
+    margin-top: 0.3em;
+}
+
+#app #ui .pokedex-nav .animal-nav.current{
+    color: #9bff00;
+}
+
+#app #ui .pokedex-nav .animal-nav.available{
+    opacity: 100%;
+    text-decoration: none;
+}
+
+#app #ui .pokedex-nav .animal-nav.blocked{
+    opacity: 50%;
+    text-decoration: line-through red;
+}
+
+#app #ui .pokedex-nav .animal-nav img{
+    display: flex;
+    flex-direction: row;
+    width: 2em;
+    height: 2em;
+    margin-right: 0.2em;
+}

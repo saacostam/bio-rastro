@@ -2,7 +2,7 @@ import {Actor, Engine, Keys, Scene, SceneActivationContext, Vector} from "excali
 
 import {Animal} from "../definitions";
 import {FlashSquare, PictureName} from "../ui";
-import {Bear, Condor, Deer, Frog} from "../actors";
+import {Bear, Condor, Deer, Frailejon, Frog} from "../actors";
 import {GameState} from "../state";
 import {SCENES} from "./constants";
 import {PokedexSceneActivationContext} from "./pokedex.ts";
@@ -55,7 +55,7 @@ export class PictureScene extends Scene{
         this.add(new PictureName({
             x: drawWidth/2,
             y: drawHeight/2 - 16,
-            text: '¡Nuevo Animal!',
+            text: '¡Nuevo Descubrimiento!',
         }))
 
         this.camera.zoom = 3;
@@ -79,6 +79,10 @@ export class PictureScene extends Scene{
             case 'condor':
                 animalActor = new Condor({x, y});
                 this.label.text = 'Cóndor de los Andes';
+                break;
+            case 'frailejon':
+                animalActor = new Frailejon({x, y});
+                this.label.text = 'Frailejón';
                 break;
             case 'bear':
             default:

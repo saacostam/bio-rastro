@@ -4,3 +4,4 @@ export * from './deer';
 export * from './frog';
 export * from './condor';
 export * from './froggy';
+export * from './frailejon';

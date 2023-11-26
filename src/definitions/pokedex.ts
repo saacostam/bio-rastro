@@ -78,5 +78,25 @@ export const pokedex: AnimalDescription[] = [
             'Envergadura Máxima: 3,30 m',
             'Peso: 15 Kg',
         ]
+    },
+    {
+        type: 'frailejon',
+        description: [
+            '(Espeletia :: Ernesto Pérez)',
+            '',
+            'Es un género de plantas de la familia',
+            'Asteraceae, nativas de Colombia,',
+            'Venezuela y Ecuador.',
+            '',
+            'Estas plantas poseen un tronco grueso,',
+            'generalmente único, con hojas suculentas y',
+            'muy velludas que se disponen en una',
+            'apretada espiral formando una roseta en',
+            'la parte superior del tallo. Cumplen una',
+            'gran función en los páramos de retener el',
+            'agua por medio de condensacion de las',
+            'neblinas, conservarla y fijarla al suelo',
+            'por capilaridad.',
+        ]
     }
 ]

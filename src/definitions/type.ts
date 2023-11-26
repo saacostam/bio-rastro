@@ -5,12 +5,13 @@ type ActorPosition = {
     y: number;
 }
 
-export type Animal = 'bear' | 'deer' | 'frog' | 'condor';
+export type Animal = 'bear' | 'deer' | 'frog' | 'condor' | 'frailejon';
 export const AllAnimals: Animal[] = [
     'bear',
     'deer',
     'frog',
     'condor',
+    'frailejon',
 ]
 
 type AnimalPosition = ActorPosition & {

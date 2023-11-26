@@ -13,7 +13,7 @@ export class PictureName extends Label{
             color: Color.White,
             font: new Font({
                 family: 'Pixelify Sans',
-                size: 8,
+                size: 7,
                 unit: FontUnit.Px,
                 textAlign: TextAlign.Center,
                 quality: 12,

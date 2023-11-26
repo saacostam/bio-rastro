@@ -1,7 +1,7 @@
 import {Engine, DisplayMode, Input, Color} from 'excalibur';
 
 import './style.css';
-import { loader } from './resources';
+import {loader, Sounds} from './resources';
 import {Level, PictureScene, Pokedex, SCENES} from './scenes';
 
 const game = new Engine({
@@ -21,4 +21,9 @@ game.addScene(SCENES.POKEDEX, new Pokedex());
 
 game.goToScene(SCENES.LEVEL1);
 
-game.start(loader).then();
+game.start(loader).then(
+    () => {
+      Sounds.music.loop = true;
+      Sounds.music.play(0.25);
+    }
+);

@@ -18,6 +18,7 @@ import {Deer} from "./deer.ts";
 import {GameState} from "../state";
 import {PhotoFlash} from "../ui";
 import {Froggy} from "./froggy.ts";
+import {Condor} from "./condor.ts";
 
 const spriteSheet = SpriteSheet.fromImageSource({
     image: Images.player,
@@ -149,7 +150,7 @@ export class Player extends Actor{
 
             const wasLastPhotoSuccessful = actors.some(
                 actor => {
-                    if (actor instanceof Bear || actor instanceof Deer || actor instanceof Froggy){
+                    if (actor instanceof Bear || actor instanceof Deer || actor instanceof Froggy || actor instanceof Condor){
                         // 1. Check distance to actor
                         const distance = actor.pos.distance(this.pos);
                         if (distance > MAX_PHOTO_DISTANCE) return;
@@ -181,6 +182,8 @@ export class Player extends Actor{
                             engine.goToScene(SCENES.PICTURE, {animal: 'deer'});
                         }else if (actor instanceof Froggy && !gameState.discoveredAnimals.some(animal => animal === 'frog')){
                             engine.goToScene(SCENES.PICTURE, {animal: 'frog'});
+                        }else if (actor instanceof Condor && !gameState.discoveredAnimals.some(animal => animal === 'condor')){
+                            engine.goToScene(SCENES.PICTURE, {animal: 'condor'});
                         }
 
                         return true;

@@ -47,6 +47,8 @@ export const level: LevelDefinition = {
         {x: TILE_SIZE*11.5, y: -TILE_SIZE*0.2},
         {x: TILE_SIZE*12.5, y: TILE_SIZE*2.6},
         {x: 14.5*TILE_SIZE, y: TILE_SIZE*7.3},
+        {x: 19*TILE_SIZE, y: TILE_SIZE},
+        {x: 20.7*TILE_SIZE, y: TILE_SIZE*2.5},
     ],
     bushBlockers: [
         {x: TILE_SIZE*0.5,y: TILE_SIZE*8},
@@ -55,6 +57,7 @@ export const level: LevelDefinition = {
         {x: 13*TILE_SIZE, y: TILE_SIZE*4.5},
         {x: 15.2*TILE_SIZE, y: TILE_SIZE*6.8},
         {x: 16*TILE_SIZE, y: TILE_SIZE*6.2},
+        {x: 16.8*TILE_SIZE, y: TILE_SIZE*5.6},
         {x: 16.8*TILE_SIZE, y: TILE_SIZE*5.6},
     ],
     waterProps: [
@@ -74,7 +77,8 @@ export const level: LevelDefinition = {
         {x: 18*TILE_SIZE, y: TILE_SIZE*9},
         {x: 17*TILE_SIZE, y: TILE_SIZE*9},
         {x: 19*TILE_SIZE, y: TILE_SIZE*9},
-        {x: 18.5*TILE_SIZE, y: TILE_SIZE*9.5},
+        {x: 20.5*TILE_SIZE, y: TILE_SIZE*0.5},
+        {x: 18.5*TILE_SIZE, y: TILE_SIZE*1.5},
     ],
     animals: [
         {
@@ -91,6 +95,11 @@ export const level: LevelDefinition = {
             type: 'frog',
             x: TILE_SIZE * 20,
             y: TILE_SIZE * 10.5,
+        },
+        {
+            type: 'condor',
+            x: TILE_SIZE * 20,
+            y: TILE_SIZE,
         },
     ],
     backgroundColor: new Color(140, 154, 69),

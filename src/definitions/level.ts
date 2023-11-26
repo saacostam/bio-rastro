@@ -104,7 +104,7 @@ export const level: LevelDefinition = {
         {
             type: 'frailejon',
             x: TILE_SIZE * 20,
-            y: TILE_SIZE*5,
+            y: TILE_SIZE*6,
         },
     ],
     backgroundColor: new Color(140, 154, 69),

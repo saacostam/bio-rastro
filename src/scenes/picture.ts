@@ -2,7 +2,7 @@ import {Actor, Engine, Keys, Scene, SceneActivationContext, Vector} from "excali
 
 import {Animal} from "../definitions";
 import {FlashSquare, PictureName} from "../ui";
-import {Bear, Deer, Frog} from "../actors";
+import {Bear, Condor, Deer, Frog} from "../actors";
 import {GameState} from "../state";
 import {SCENES} from "./constants";
 import {PokedexSceneActivationContext} from "./pokedex.ts";
@@ -75,6 +75,10 @@ export class PictureScene extends Scene{
             case 'deer':
                 animalActor = new Deer({x, y});
                 this.label.text = 'Venado Cola Blanca';
+                break;
+            case 'condor':
+                animalActor = new Condor({x, y});
+                this.label.text = 'Cóndor de los Andes';
                 break;
             case 'bear':
             default:

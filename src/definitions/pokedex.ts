@@ -58,5 +58,25 @@ export const pokedex: AnimalDescription[] = [
             'cambio climático son solo algunas de',
             'las presiones que enfrentan.',
         ]
+    },
+    {
+        type: 'condor',
+        description: [
+            '(Vultur gryphus)',
+            'Especia de ave de la familia Cathartidae,',
+            'que habita en la cordillera de los Andes',
+            'y las costas adyacentes del océano',
+            'Pacífico en el oeste de América del Sur.',
+            '',
+            'El ave volador más grande del mundo por la',
+            'medida combinada de peso y envergadura',
+            'máxima. Tiene plumaje negro con un collar',
+            'de plumas blancas que rodea la base del',
+            'cuello. La cabeza y el cuello casi no',
+            'tienen plumas y son de color rojo apagado.',
+            '',
+            'Envergadura Máxima: 3,30 m',
+            'Peso: 15 Kg',
+        ]
     }
 ]

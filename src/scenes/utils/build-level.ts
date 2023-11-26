@@ -3,8 +3,7 @@ import {Actor} from "excalibur";
 import {BushBlocker, Flower, ForestProp, Grass, Leaf, Rock, SmallRock, Water, WaterProp} from "../../world";
 import {TILE_SIZE} from "../../constants";
 import {LevelDefinition} from "../../definitions";
-import {Bear, Deer} from "../../actors";
-import {Froggy} from "../../actors/froggy.ts";
+import {Bear, Condor, Deer, Froggy} from "../../actors";
 
 export function buildLevel(levelDefinition: LevelDefinition): Actor[]{
     const {
@@ -96,6 +95,9 @@ export function buildLevel(levelDefinition: LevelDefinition): Actor[]{
                     break;
                 case 'deer':
                     animalInstance = new Deer({x, y})
+                    break;
+                case 'condor':
+                    animalInstance = new Condor({x, y});
                     break;
                 case 'bear':
                 default:

@@ -3,7 +3,7 @@ import {Actor, Engine, Keys, Scene, SceneActivationContext} from "excalibur";
 import {AllAnimals, Animal, pokedex} from "../definitions";
 import {TILE_SIZE} from "../constants";
 import {Description, PictureName} from "../ui";
-import {Bear, Deer, Frog} from "../actors";
+import {Bear, Condor, Deer, Frog} from "../actors";
 import {SCENES} from "./constants";
 import {GameState} from "../state";
 import {Sounds} from "../resources";
@@ -52,6 +52,10 @@ export class Pokedex extends Scene{
             case 'deer':
                 animal = new Deer({x: 2.7*TILE_SIZE, y: 3*TILE_SIZE});
                 this.animalProfile.animalLabel.text = 'Venado Cola Blanca';
+                break;
+            case 'condor':
+                animal = new Condor({x: 2.7*TILE_SIZE, y: 3*TILE_SIZE});
+                this.animalProfile.animalLabel.text = 'Cóndor de los Andes';
                 break;
             case 'bear':
             default:
@@ -105,6 +109,7 @@ export class Pokedex extends Scene{
                         animal === 'bear' ? 'Oso de Anteojos' :
                         animal === 'deer' ? 'Venado Cola Blanca':
                         animal === 'frog' ? 'Rana Arlequín':
+                        animal === 'condor' ? 'Cóndor de los Andes':
                                 'Undefined';
 
                     el.append(img);

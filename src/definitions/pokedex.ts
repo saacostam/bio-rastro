@@ -58,5 +58,25 @@ export const pokedex: AnimalDescription[] = [
             'cambio climático son solo algunas de',
             'las presiones que enfrentan.',
         ]
+    },
+    {
+        type: 'condor',
+        description: [
+            '(Condorito)',
+            'Las ranas arlequín están en su mayoría',
+            'incluidas en la Lista Roja de la Unión',
+            'Internacional para la Conservación de la',
+            'Naturaleza. Para 2018, 37 de estas ranas',
+            'habían desaparecido de sus hábitats y, a',
+            'pesar del esfuerzo por encontrarlas, no',
+            'se habían registrado desde principios del',
+            '2000.',
+            '',
+            'Las enfermedades infecciosas, la',
+            'destrucción y degradación de sus',
+            'hábitats, las especies invasoras y el',
+            'cambio climático son solo algunas de',
+            'las presiones que enfrentan.',
+        ]
     }
 ]

@@ -17,6 +17,7 @@ const Images = {
     camera: new ImageSource('/camera.png'),
     frog: new ImageSource('/frog.png'),
     froggy: new ImageSource('/froggy.png'),
+    condor: new ImageSource('/condor.png'),
 }
 
 const Sounds = {

@@ -71,6 +71,7 @@ export class Level extends Scene{
                         animal === 'bear' ? 'Oso de Anteojos' :
                         animal === 'deer' ? 'Venado Cola Blanca':
                         animal === 'frog' ? 'Rana Arlequín':
+                        animal === 'condor' ? 'Cóndor de los Andes':
                             'Undefined';
 
                     el.append(img);

@@ -24,6 +24,7 @@ const Sounds = {
     plop: new Sound('/audio/plop.mp3'),
     yeah: new Sound('/audio/yeah.mp3'),
     shutter: new Sound('/audio/camera.mp3'),
+    music: new Sound('/audio/music.mp3'),
 }
 
 const loader = new Loader();
@@ -41,6 +42,7 @@ for (const res in allResources) {
 loader.loadingBarColor = Color.White;
 loader.backgroundColor = '#000';
 
-loader.suppressPlayButton = true;
+loader.suppressPlayButton = false;
+loader.playButtonText = 'Go';
 
 export { loader, Images, Sounds }

@@ -48,7 +48,7 @@ export const level: LevelDefinition = {
         {x: TILE_SIZE*12.5, y: TILE_SIZE*2.6},
         {x: 14.5*TILE_SIZE, y: TILE_SIZE*7.3},
         {x: 19*TILE_SIZE, y: TILE_SIZE},
-        {x: 20*TILE_SIZE, y: TILE_SIZE*2.5},
+        {x: 20.7*TILE_SIZE, y: TILE_SIZE*2.5},
     ],
     bushBlockers: [
         {x: TILE_SIZE*0.5,y: TILE_SIZE*8},

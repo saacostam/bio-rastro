@@ -55,7 +55,9 @@ for (const res in allResources) {
 loader.loadingBarColor = Color.White;
 loader.backgroundColor = '#000';
 
-loader.suppressPlayButton = false;
+loader.suppressPlayButton = true;
 loader.playButtonText = 'Go';
+
+loader.logo = resolveFilePath("/logo.png");
 
 export { loader, Images, Sounds }

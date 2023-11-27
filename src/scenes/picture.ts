@@ -1,6 +1,6 @@
 import {Actor, Engine, Keys, Scene, SceneActivationContext, Vector} from "excalibur";
 
-import {Animal} from "../definitions";
+import {AllAnimals, Animal} from "../definitions";
 import {FlashSquare, PictureName} from "../ui";
 import {Bear, Condor, Deer, Frailejon, Frog} from "../actors";
 import {GameState} from "../state";
@@ -127,14 +127,25 @@ export class PictureScene extends Scene{
 
         if (this.inTimeout && this.timeout >=  TOTAL_MOVEMENT_TIME){
             if (engine.input.keyboard.wasPressed(Keys.Space)){
+                Sounds.plop.play();
+                this.inTimeout = false;
+
+                const { discoveredAnimals } = new GameState();
+
                 const context: PokedexSceneActivationContext = {
                     preference: this.preferredAnimal,
                 }
 
-                Sounds.plop.play();
-                engine.goToScene(SCENES.POKEDEX, context);
+                const allAnimalsWereDiscovered = AllAnimals.every(animal => {
+                    return discoveredAnimals.some(discoveredAnimal => discoveredAnimal === animal);
+                });
 
-                this.inTimeout = false;
+                if (allAnimalsWereDiscovered){
+                    engine.goToScene(SCENES.CONGRATS, context);
+                    return;
+                }
+
+                engine.goToScene(SCENES.POKEDEX, context);
             }
         }
     }

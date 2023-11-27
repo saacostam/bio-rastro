@@ -1,6 +1,6 @@
 import {Color, ImageSource, Sound, Loader} from "excalibur";
 
-const LOCAL_ASSETS_MODE = false;
+const LOCAL_ASSETS_MODE = true;
 
 function resolveFilePath(url: string){
     return `${
@@ -29,6 +29,7 @@ const Images = {
     froggy: new ImageSource(resolveFilePath('/froggy.png')),
     condor: new ImageSource(resolveFilePath('/condor.png')),
     frailejon: new ImageSource(resolveFilePath('/frailejon.png')),
+    medal: new ImageSource(resolveFilePath('/medal.png')),
 }
 
 const Sounds = {

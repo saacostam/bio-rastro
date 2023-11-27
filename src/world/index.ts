@@ -8,3 +8,4 @@ export * from './bush-blocker';
 export * from './water-prop';
 export * from './forest-prop';
 export * from './small-rock';
+export * from './medal';

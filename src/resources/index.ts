@@ -29,6 +29,7 @@ const Images = {
     froggy: new ImageSource(resolveFilePath('/froggy.png')),
     condor: new ImageSource(resolveFilePath('/condor.png')),
     frailejon: new ImageSource(resolveFilePath('/frailejon.png')),
+    medal: new ImageSource(resolveFilePath('/medal.png')),
 }
 
 const Sounds = {

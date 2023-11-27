@@ -2,7 +2,7 @@ import {Engine, DisplayMode, Input, Color} from 'excalibur';
 
 import './style.css';
 import {loader, Sounds} from './resources';
-import {Level, PictureScene, Pokedex, SCENES} from './scenes';
+import {Congrats, Level, PictureScene, Pokedex, SCENES} from './scenes';
 
 const game = new Engine({
   width: 256,
@@ -18,6 +18,7 @@ const game = new Engine({
 game.addScene(SCENES.LEVEL1, new Level());
 game.addScene(SCENES.PICTURE, new PictureScene());
 game.addScene(SCENES.POKEDEX, new Pokedex());
+game.addScene(SCENES.CONGRATS, new Congrats());
 
 game.goToScene(SCENES.LEVEL1);
 

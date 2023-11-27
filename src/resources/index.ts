@@ -1,6 +1,6 @@
 import {Color, ImageSource, Sound, Loader} from "excalibur";
 
-const LOCAL_ASSETS_MODE = true;
+const LOCAL_ASSETS_MODE = false;
 
 function resolveFilePath(url: string){
     return `${

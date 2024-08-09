@@ -28,3 +28,5 @@ game.start(loader).then(
       Sounds.music.play(0.25);
     }
 );
+
+window.addEventListener('keydown', e => e.preventDefault())

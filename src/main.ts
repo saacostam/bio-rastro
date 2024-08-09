@@ -1,4 +1,4 @@
-import {Engine, DisplayMode, Input, Color} from 'excalibur';
+import {Engine, DisplayMode, Input, Color, ScrollPreventionMode} from 'excalibur';
 
 import './style.css';
 import {loader, Sounds} from './resources';
@@ -13,6 +13,7 @@ const game = new Engine({
   pixelRatio: 4,
   backgroundColor: Color.Black,
   canvasElementId: 'game',
+  scrollPreventionMode: ScrollPreventionMode.All,
 })
 
 game.addScene(SCENES.LEVEL1, new Level());
